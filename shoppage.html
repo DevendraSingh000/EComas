@@ -137,8 +137,7 @@
                             4
                         </span>
                     </div>
-                    <button type="button" aria-label="Open navigation menu"
-                        class="lg:hidden flex justify-center items-center text-xl">
+                    <button type="button" class="lg:hidden flex justify-center items-center text-xl">
                         <i class="fa-solid fa-bars"></i>
                     </button>
 
@@ -185,7 +184,6 @@
                 </div>
             </div>
 
-            <!-- Mobile Filter Toggle -->
             <details class="lg:hidden mb-5 border border-stone-200">
                 <summary
                     class="flex justify-between items-center px-4 py-3 font-medium text-sm cursor-pointer list-none">
@@ -205,15 +203,11 @@
                     </button>
                 </div>
             </details>
-
-            <!-- Main Layout -->
             <div
                 class="gap-7 lg:gap-8 xl:gap-10 grid grid-cols-1 lg:grid-cols-[210px_minmax(0,1fr)] xl:grid-cols-[245px_minmax(0,1fr)]">
 
-                <!-- Sidebar -->
                 <aside id="filterSidebar" class="hidden lg:block space-y-6">
 
-                    <!-- Price Filter -->
                     <div class="pb-5 border-stone-200 border-b">
                         <h2 class="mb-4 font-semibold text-sm">Price Filter</h2>
 
@@ -244,7 +238,6 @@
                         </div>
                     </div>
 
-                    <!-- Product Status -->
                     <div class="pb-5 border-stone-200 border-b">
                         <h2 class="mb-4 font-semibold text-sm">Product Status</h2>
 
@@ -259,7 +252,7 @@
                         </label>
                     </div>
 
-                    <!-- Ratings -->
+
                     <div class="pb-5 border-stone-200 border-b">
                         <h2 class="mb-4 font-semibold text-sm">Customer Ratings</h2>
 
@@ -290,7 +283,7 @@
                         </div>
                     </div>
 
-                    <!-- Categories -->
+
                     <div class="pb-5 border-stone-200 border-b">
                         <h2 class="mb-4 font-semibold text-sm">Categories</h2>
 
@@ -334,7 +327,6 @@
                         </div>
                     </div>
 
-                    <!-- Filter by Color -->
                     <div class="pb-5 border-stone-200 border-b">
                         <h2 class="mb-4 font-semibold text-sm">Filter By Color</h2>
 
@@ -377,7 +369,6 @@
                         </div>
                     </div>
 
-                    <!-- Popular Brands -->
                     <div>
                         <h2 class="mb-4 font-semibold text-sm">Popular Brands</h2>
 
@@ -415,24 +406,21 @@
                     </div>
                 </aside>
 
-                <!-- Product Grid -->
+
+
                 <main class="min-w-0">
+                    <div class="gap-3 sm:gap-5 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
 
-                    <div id="productGrid" class="gap-3 sm:gap-5 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-
-                        <!-- Product 1 -->
-                        <article data-name="Classic Green Casual Shirt" data-price="76" data-old-price="97"
-                            data-rating="4.5" data-category="Clothing" data-color="Green" data-brand="Urban Edit"
-                            data-stock="true"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=600&q=80"
-                                    alt="Classic Green Casual Shirt" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
+                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
                                 <span
                                     class="top-2 sm:top-3 left-2 sm:left-3 absolute bg-[#bd8248] px-2 py-1 text-[10px] text-white">SALE</span>
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">Urban
@@ -440,63 +428,59 @@
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Classic Green Casual Shirt</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm tracking-wide">★★★★<span
-                                            class="text-stone-300">★</span></span><span
-                                        class="text-[10px] text-gray-500">(12)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$76.00</span><del
-                                        class="text-gray-400 text-xs">$97.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm tracking-wide">★★★★<span
+                                            class="text-stone-300">★</span></span>
+                                    <span class="text-[10px] text-gray-500">(12)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$76.00</span>
+                                    <del class="text-gray-400 text-xs">$97.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
-                        <!-- Product 2 -->
-                        <article data-name="Everyday Travel Backpack" data-price="102" data-old-price="120"
-                            data-rating="4.2" data-category="Bags" data-color="Red" data-brand="Smile" data-stock="true"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80"
-                                    alt="Everyday Travel Backpack" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
+                                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
                                 <span
                                     class="top-2 sm:top-3 left-2 sm:left-3 absolute bg-[#bd8248] px-2 py-1 text-[10px] text-white">SALE</span>
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">Smile</p>
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Everyday Travel Backpack</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm">★★★★<span
-                                            class="text-stone-300">★</span></span><span
-                                        class="text-[10px] text-gray-500">(15)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$102.00</span><del
-                                        class="text-gray-400 text-xs">$120.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm">★★★★<span
+                                            class="text-stone-300">★</span></span>
+                                    <span class="text-[10px] text-gray-500">(15)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$102.00</span>
+                                    <del class="text-gray-400 text-xs">$120.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
-                        <!-- Product 3 -->
-                        <article data-name="Everyday Running Sneakers" data-price="126" data-old-price="150"
-                            data-rating="4.8" data-category="Shoes" data-color="Orange" data-brand="Hypster"
-                            data-stock="true"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
-                                    alt="Everyday Running Sneakers" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">Hypster
@@ -504,32 +488,30 @@
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Everyday Running Sneakers</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm">★★★★★</span><span
-                                        class="text-[10px] text-gray-500">(22)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$126.00</span><del
-                                        class="text-gray-400 text-xs">$150.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm">★★★★★</span>
+                                    <span class="text-[10px] text-gray-500">(22)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$126.00</span>
+                                    <del class="text-gray-400 text-xs">$150.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
-                        <!-- Product 4 -->
-                        <article data-name="Classic Everyday Shoulder Bag" data-price="93" data-old-price="110"
-                            data-rating="4.4" data-category="Bags" data-color="Yellow" data-brand="Modish"
-                            data-stock="true"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80"
-                                    alt="Classic Everyday Shoulder Bag" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
+                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
                                 <span
                                     class="top-2 sm:top-3 left-2 sm:left-3 absolute bg-[#bd8248] px-2 py-1 text-[10px] text-white">SALE</span>
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">Modish
@@ -537,33 +519,31 @@
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Classic Everyday Shoulder Bag</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm">★★★★<span
-                                            class="text-stone-300">★</span></span><span
-                                        class="text-[10px] text-gray-500">(8)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$93.00</span><del
-                                        class="text-gray-400 text-xs">$110.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm">★★★★<span
+                                            class="text-stone-300">★</span></span>
+                                    <span class="text-[10px] text-gray-500">(8)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$93.00</span>
+                                    <del class="text-gray-400 text-xs">$110.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
-                        <!-- Product 5 -->
-                        <article data-name="Everyday Graphic T-Shirt" data-price="36" data-old-price="50"
-                            data-rating="4.1" data-category="Clothing" data-color="Orange" data-brand="Urban Edit"
-                            data-stock="true"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80"
-                                    alt="Everyday Graphic T-Shirt" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
+                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
                                 <span
                                     class="top-2 sm:top-3 left-2 sm:left-3 absolute bg-[#bd8248] px-2 py-1 text-[10px] text-white">SALE</span>
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">Urban
@@ -571,31 +551,29 @@
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Everyday Graphic T-Shirt</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm">★★★★<span
-                                            class="text-stone-300">★</span></span><span
-                                        class="text-[10px] text-gray-500">(3)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$36.00</span><del
-                                        class="text-gray-400 text-xs">$50.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm">★★★★<span
+                                            class="text-stone-300">★</span></span>
+                                    <span class="text-[10px] text-gray-500">(3)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$36.00</span>
+                                    <del class="text-gray-400 text-xs">$50.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
-                        <!-- Product 6 -->
-                        <article data-name="Compact Everyday Mini Bag" data-price="64" data-old-price="80"
-                            data-rating="4.6" data-category="Bags" data-color="Blue" data-brand="Backyard"
-                            data-stock="false"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80"
-                                    alt="Compact Everyday Mini Bag" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">Backyard
@@ -603,32 +581,30 @@
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Compact Everyday Mini Bag</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm">★★★★★</span><span
-                                        class="text-[10px] text-gray-500">(3)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$64.00</span><del
-                                        class="text-gray-400 text-xs">$80.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm">★★★★★</span>
+                                    <span class="text-[10px] text-gray-500">(3)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$64.00</span>
+                                    <del class="text-gray-400 text-xs">$80.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
-                        <!-- Product 7 -->
-                        <article data-name="Relaxed Fit Blue Shirt" data-price="58" data-old-price="72"
-                            data-rating="4.7" data-category="Clothing" data-color="Blue" data-brand="Hypster"
-                            data-stock="true"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=600&q=80"
-                                    alt="Relaxed Fit Blue Shirt" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
+                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
                                 <span
                                     class="top-2 sm:top-3 left-2 sm:left-3 absolute bg-[#bd8248] px-2 py-1 text-[10px] text-white">SALE</span>
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">Hypster
@@ -636,29 +612,28 @@
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Relaxed Fit Blue Shirt</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm">★★★★★</span><span
-                                        class="text-[10px] text-gray-500">(15)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$58.00</span><del
-                                        class="text-gray-400 text-xs">$72.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm">★★★★★</span>
+                                    <span class="text-[10px] text-gray-500">(15)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$58.00</span>
+                                    <del class="text-gray-400 text-xs">$72.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
-                        <!-- Product 8 -->
-                        <article data-name="Floral Summer Outfit" data-price="68" data-old-price="85" data-rating="4.8"
-                            data-category="Clothing" data-color="Blue" data-brand="Retro" data-stock="true"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=600&q=80"
-                                    alt="Floral Summer Outfit" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">The Retro
@@ -666,32 +641,30 @@
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Floral Summer Outfit</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm">★★★★★</span><span
-                                        class="text-[10px] text-gray-500">(22)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$68.00</span><del
-                                        class="text-gray-400 text-xs">$85.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm">★★★★★</span>
+                                    <span class="text-[10px] text-gray-500">(22)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$68.00</span>
+                                    <del class="text-gray-400 text-xs">$85.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
-                        <!-- Product 9 -->
-                        <article data-name="Classic Brown Leather Sandals" data-price="52" data-old-price="65"
-                            data-rating="4.2" data-category="Shoes" data-color="Orange" data-brand="Modish"
-                            data-stock="true"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?auto=format&fit=crop&w=600&q=80"
-                                    alt="Classic Brown Leather Sandals" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
+                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
                                 <span
                                     class="top-2 sm:top-3 left-2 sm:left-3 absolute bg-[#bd8248] px-2 py-1 text-[10px] text-white">SALE</span>
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">Modish
@@ -699,63 +672,60 @@
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Classic Brown Leather Sandals</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm">★★★★<span
-                                            class="text-stone-300">★</span></span><span
-                                        class="text-[10px] text-gray-500">(8)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$52.00</span><del
-                                        class="text-gray-400 text-xs">$65.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm">★★★★<span
+                                            class="text-stone-300">★</span></span>
+                                    <span class="text-[10px] text-gray-500">(8)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$52.00</span>
+                                    <del class="text-gray-400 text-xs">$65.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
-                        <!-- Product 10 -->
-                        <article data-name="Soft Knit Everyday Sweater" data-price="82" data-old-price="99"
-                            data-rating="4.5" data-category="Clothing" data-color="Purple" data-brand="Smile"
-                            data-stock="true"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=600&q=80"
-                                    alt="Soft Knit Everyday Sweater" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
+                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
                                 <span
                                     class="top-2 sm:top-3 left-2 sm:left-3 absolute bg-[#bd8248] px-2 py-1 text-[10px] text-white">SALE</span>
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">Smile</p>
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Soft Knit Everyday Sweater</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm">★★★★<span
-                                            class="text-stone-300">★</span></span><span
-                                        class="text-[10px] text-gray-500">(15)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$82.00</span><del
-                                        class="text-gray-400 text-xs">$99.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm">★★★★<span
+                                            class="text-stone-300">★</span></span>
+                                    <span class="text-[10px] text-gray-500">(15)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$82.00</span>
+                                    <del class="text-gray-400 text-xs">$99.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
-                        <!-- Product 11 -->
-                        <article data-name="Floral Summer Dress" data-price="68" data-old-price="85" data-rating="4.8"
-                            data-category="Clothing" data-color="Blue" data-brand="Retro" data-stock="true"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=600&q=80"
-                                    alt="Floral Summer Dress" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">The Retro
@@ -763,32 +733,30 @@
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Floral Summer Dress</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm">★★★★★</span><span
-                                        class="text-[10px] text-gray-500">(22)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$68.00</span><del
-                                        class="text-gray-400 text-xs">$85.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm">★★★★★</span>
+                                    <span class="text-[10px] text-gray-500">(22)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$68.00</span>
+                                    <del class="text-gray-400 text-xs">$85.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
-                        <!-- Product 12 -->
-                        <article data-name="Colorful Travel Backpack" data-price="82" data-old-price="99"
-                            data-rating="4.4" data-category="Bags" data-color="Red" data-brand="Backyard"
-                            data-stock="false"
+                        <div
                             class="group bg-white hover:shadow-lg mx-auto border border-stone-200 w-full max-w-[320px] overflow-hidden transition-all hover:-translate-y-1 duration-300">
                             <div class="relative bg-[#f2f3f4] overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?auto=format&fit=crop&w=600&q=80"
-                                    alt="Colorful Travel Backpack" loading="lazy"
-                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" />
+                                    class="w-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
                                 <span
                                     class="top-2 sm:top-3 left-2 sm:left-3 absolute bg-[#bd8248] px-2 py-1 text-[10px] text-white">SALE</span>
-                                <button type="button" aria-label="Add to wishlist"
-                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">♡</button>
+                                <div
+                                    class="top-2 sm:top-3 right-2 sm:right-3 absolute flex justify-center items-center bg-white hover:bg-[#bd8248] rounded-full w-8 h-8 hover:text-white text-lg transition">
+                                    ♡</div>
                             </div>
                             <div class="p-3 sm:p-4">
                                 <p class="mb-1 text-[#bd8248] text-[10px] sm:text-xs uppercase tracking-wider">Backyard
@@ -796,48 +764,43 @@
                                 <h2
                                     class="min-h-10 font-medium text-[#17202a] group-hover:text-[#9d6533] text-sm sm:text-base line-clamp-2 leading-5">
                                     Colorful Travel Backpack</h2>
-                                <div class="flex items-center gap-1.5 mt-2"><span
-                                        class="text-[#bd8248] text-sm">★★★★<span
-                                            class="text-stone-300">★</span></span><span
-                                        class="text-[10px] text-gray-500">(8)</span></div>
-                                <div class="flex flex-wrap items-center gap-2 mt-2"><span
-                                        class="font-semibold text-base">$82.00</span><del
-                                        class="text-gray-400 text-xs">$99.00</del></div>
-                                <button type="button"
+                                <div class="flex items-center gap-1.5 mt-2">
+                                    <span class="text-[#bd8248] text-sm">★★★★<span
+                                            class="text-stone-300">★</span></span>
+                                    <span class="text-[10px] text-gray-500">(8)</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <span class="font-semibold text-base">$82.00</span>
+                                    <del class="text-gray-400 text-xs">$99.00</del>
+                                </div>
+                                <div
                                     class="flex justify-center items-center gap-2 bg-[#bd8248] hover:bg-[#9d6533] mt-4 px-3 py-2.5 rounded-md w-full font-medium text-white text-xs sm:text-sm transition">
-                                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                                </button>
+                                    Add to Cart</div>
                             </div>
-                        </article>
+                        </div>
 
                     </div>
 
-
-                    <!-- No Results -->
-                    <p id="noResults" class="hidden py-16 text-muted text-sm text-center">
-                        No products found. Try changing your filters.
-                    </p>
-
-                    <!-- Pagination -->
-                    <nav aria-label="Product pagination"
-                        class="flex justify-center lg:justify-start items-center gap-2 mt-10 sm:mt-12">
-                        <button type="button"
-                            class="flex justify-center items-center bg-brand w-9 h-9 text-white text-sm page-btn">1</button>
-                        <button type="button"
-                            class="flex justify-center items-center border border-stone-200 hover:border-brand w-9 h-9 hover:text-brand text-sm transition page-btn">2</button>
-                        <button type="button"
-                            class="flex justify-center items-center border border-stone-200 hover:border-brand w-9 h-9 hover:text-brand text-sm transition page-btn">3</button>
-                        <button type="button"
-                            class="flex justify-center items-center border border-stone-200 hover:border-brand w-9 h-9 hover:text-brand text-sm transition page-btn"
-                            aria-label="Next page">→</button>
-                    </nav>
+                    <div class="flex justify-center lg:justify-start items-center gap-2 mt-10 sm:mt-12">
+                        <div class="flex justify-center items-center bg-brand w-9 h-9 text-white text-sm">1</div>
+                        <div
+                            class="flex justify-center items-center border border-stone-200 hover:border-brand w-9 h-9 hover:text-brand text-sm transition">
+                            2</div>
+                        <div
+                            class="flex justify-center items-center border border-stone-200 hover:border-brand w-9 h-9 hover:text-brand text-sm transition">
+                            3</div>
+                        <div
+                            class="flex justify-center items-center border border-stone-200 hover:border-brand w-9 h-9 hover:text-brand text-sm transition">
+                            →</div>
+                    </div>
                 </main>
+
             </div>
         </div>
     </section>
 
 
-    
+
     <footer class="w-full text-[#243344]">
         <div
             class="bg-[#ffe0b2] mx-auto px-5 sm:px-8 lg:px-12 py-12 sm:py-14 lg:py-20 border-gray-500 border-b max-w-[1540px]">
@@ -982,7 +945,3 @@
 </body>
 
 </html>
-
-<!-- #D3A376 -->
-<!-- #8C6E63 -->
-<!-- #3E2522 -->
